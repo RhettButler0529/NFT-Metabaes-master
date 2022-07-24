@@ -1,0 +1,62 @@
+.roadmap-item {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  color: #fff;
+}
+
+.roadmap-progress {
+  text-align: center;
+}
+
+.roadmap-progress-circle {
+  background-color: rgb(255, 76, 181);
+  border-radius: 50%;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 2.25rem;
+  position: relative;
+  margin: 0px auto 20px !important;
+}
+
+.roadmap-progress-value {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.roadmap-content {
+  width: 100%;
+  margin: 10px 30px 25px;
+  border-bottom: 1px solid #fff;
+  font-size: 1.15rem;
+}
+
+@media (min-width: 1200px) {
+  .roadmap-progress-circle {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+  .roadmap-progress-circle {
+    height: 70px;
+    width: 70px;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .roadmap-progress-circle {
+    height: 60px;
+    width: 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  .roadmap-progress-circle {
+    height: 50px;
+    width: 50px;
+  }
+}

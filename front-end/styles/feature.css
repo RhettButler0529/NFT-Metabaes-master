@@ -1,0 +1,106 @@
+.feature-header {
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: #fff;
+  line-height: 3.75rem;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.feature-content {
+  font-size: 1.15rem;
+  color: #fff;
+  font-weight: 1.5rem;
+  margin-top: 50px;
+}
+
+.feature-img {
+  margin-top: 50px;
+}
+
+.feature-btn-group {
+  display: flex;
+  margin-top: 80px;
+  justify-content: space-between;
+}
+
+.feature-btn-group button {
+  border-radius: 24px !important;
+  background-color: transparent;
+  border: 2px solid #ff4cb5 !important;
+  padding: 9px 35px;
+}
+
+.feature-btn-group button:hover {
+  background-color: #ff4cb5;
+}
+
+.feature-btn-group button:focus {
+  background-color: transparent;
+}
+
+.feature-btn-group .btn:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.modal-content {
+  background: #121212;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.sr-only {
+  position: absolute;
+  clip: rect(0,0,0,0);
+}
+
+.modal-header button {
+  background-color: transparent;
+  border: none;
+}
+
+.modal-header button span {
+  color: #fff;
+  font-size: 2rem;
+}
+
+.modal-body {
+  text-align: center;
+}
+
+.modal-footer button {
+  border-radius: 24px !important;
+  background-color: transparent;
+  border: 2px solid #ff4cb5 !important;
+  padding: 9px 35px;
+  font-size: 0.9rem;
+}
+
+.modal-footer button:hover {
+  background-color: #ff4cb5;
+}
+
+.modal-footer .btn:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.mint-number {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.mint-number button {
+  background-color: transparent;
+  color: #fff;
+  font-size: 3rem;
+  border: none;
+}
+
+.mint-number label {
+  font-size: 3rem;
+}

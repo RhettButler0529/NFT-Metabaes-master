@@ -1,0 +1,66 @@
+
+.accordion {
+  width: 100%;
+}
+.panel {
+  background: transparent;
+}
+.panel__label {
+  position: relative;
+  display: block;
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 5px 0;
+  font-weight: 500;
+  font-size: 1.75rem;
+  font-family: inherit;
+  transition: color 0.2s linear;
+  cursor: pointer;
+  color: #fff;
+}
+.panel__label:focus {
+  outline: none;
+}
+.panel__label:after,
+.panel__label:before {
+  content: '';
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  width: 22px;
+  height: 2px;
+  margin-top: -2px;
+  background-color: #fff;
+}
+.panel__label:before {
+  transform: rotate(-90deg);
+  transition: transform 0.35s cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+.panel[aria-expanded='true'] .panel__content {
+  opacity: 1;
+}
+.panel[aria-expanded='true'] .panel__label {
+  color: #fff;
+}
+.panel[aria-expanded='true'] .panel__label:before {
+  transform: rotate(0deg);
+}
+.panel__inner {
+  height: 100%;
+  overflow: hidden;
+  will-change: height;
+  transition: height 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
+  color: #fff;
+}
+.panel__content {
+  margin: 8px 0;
+  font-size: 1.25rem;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s linear 0.18s;
+}
+.panel:not(:last-child) {
+  margin-bottom: 3px;
+}
